@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.1">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"always","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: true,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Blog">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blog">
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">this is a blog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">2</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+      
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">2</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">2</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-schedule">
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>Schedule</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-sitemap">
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>Sitemap</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="fa fa-search fa-fw"></i>Search</a>
+      </li>
+    
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+  <div id="posts" class="posts-expand">
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/26/book/don't-make-me-think/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tony You">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/10/26/book/don't-make-me-think/" class="post-title-link" itemprop="url">don't make me think(不要让我思考)</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-10-26 14:41:16 / Modified: 15:13:00" itemprop="dateCreated datePublished" datetime="2019-10-26T14:41:16+08:00">2019-10-26</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/book/" itemprop="url" rel="index"><span itemprop="name">book</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/10/26/book/don't-make-me-think/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/10/26/book/don't-make-me-think/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>一本关于交互的简单小册子，可以当作交互的科普入门。</p>
+<h3 id="1-别让我思考"><a href="#1-别让我思考" class="headerlink" title="1. 别让我思考"></a>1. 别让我思考</h3><p>本张强调一个点，在面对用户使用的时候，用户的整个体感是：</p>
+<ul>
+<li><p>去掉问号</p>
+</li>
+<li><p>不言而喻</p>
+<p>Q： 至于怎么去做到这个，后续会有部分设计 </p>
+</li>
+</ul>
+<h3 id="2-我们是如何使用web的"><a href="#2-我们是如何使用web的" class="headerlink" title="2. 我们是如何使用web的"></a>2. 我们是如何使用web的</h3><p>里面有个很有意思的看法：</p>
+<blockquote>
+<p>为什么东西总是在你找的最后一个地方找到？<br>因为你找到以后就不会再找。</p>
+</blockquote>
+<p>从用户的目的来讲，其实就分两类：达到目的停止；没达到目的离开。</p>
+<blockquote>
+<p>满意策略： 我们不会选择最佳选项，只会选择第一个合理的选项</p>
+</blockquote>
+<p>其实交互不但要准备好合理的选项，同时也要考虑到用户所处的情景之下，譬如高危决策，压力，模糊目标，有限的信息、变化的环境<br>。</p>
+<blockquote>
+<p>如果发现某个事物能用，我们会一直用它。</p>
+</blockquote>
+<p>人的使用惯性是非常强的，大部分人（不经过专门逻辑训练）都会保留惯性，停留在已知的舒适区，而这个惯性和舒适区天然的是排斥新的事物。</p>
+<h3 id="3-广告牌设计101法则"><a href="#3-广告牌设计101法则" class="headerlink" title="3. 广告牌设计101法则"></a>3. 广告牌设计101法则</h3><ul>
+<li>视觉层次</li>
+<li>利用习惯用法<br>这里想到了最近听来的一个现象：在一些B端领域，产品的关闭按钮等都是在页面的左上角，为什么呢？因为早期屏幕大小尺寸不一，只有左上角能保证交互/功能的可用性。这些习惯在现在看起来已不是问题。</li>
+<li>明示可点击区域</li>
+<li>最大限度降低干扰</li>
+</ul>
+<h3 id="4-动物、植物与无机物"><a href="#4-动物、植物与无机物" class="headerlink" title="4.  动物、植物与无机物"></a>4.  动物、植物与无机物</h3><blockquote>
+<p>点击次数不是问题，点击前的思考难度才是问题</p>
+</blockquote>
+<p>读书的方式不是问题，读某本书的目的才是问题。</p>
+<h3 id="5-省略不必要的文字"><a href="#5-省略不必要的文字" class="headerlink" title="5. 省略不必要的文字"></a>5. 省略不必要的文字</h3><h3 id="6-街头指示牌和面包屑"><a href="#6-街头指示牌和面包屑" class="headerlink" title="6. 街头指示牌和面包屑"></a>6. 街头指示牌和面包屑</h3><p>这一部分启发还是有的，把用户在web中浏览类比想象成在超市中购物。</p>
+<ul>
+<li>链接导航类比区域指引</li>
+<li>超市购物用户可以有”问人”、”自己寻找”两类基础选择</li>
+<li>web不同于超市在于物理的记忆性。对于一个陌生的网站，完全没有记忆性可言，这一点也是为什么会有是”书签”这样的能力/产品。设想如果能具有物理的记忆性，书签是不是就无用武之地。（这里卖个关子，后续会孵化出相应的产品）</li>
+<li>后退点击率占据网站点击量3～4成</li>
+</ul>
+<h3 id="8-web设计团队讨论可用性是浪费时间"><a href="#8-web设计团队讨论可用性是浪费时间" class="headerlink" title="8. web设计团队讨论可用性是浪费时间"></a>8. web设计团队讨论可用性是浪费时间</h3><p>这一part直接拉回了创业那段时间的记忆：</p>
+<ul>
+<li>信仰大战（个人情绪）</li>
+</ul>
+<p>由大量无法验证的个人信仰组成：大体上是为了在某些重要问题上的最好做法上达到一致</p>
+<p>投射个人感觉：代表绝大多数web用户</p>
+<ul>
+<li>职位情绪</li>
+</ul>
+<p>不同职位对于应该如何设计有不同的看法</p>
+<p>市场文化与工程文化冲突</p>
+<p>web用户是独特的，试图用简单的模型来替代</p>
+<h3 id="9-可用性测试"><a href="#9-可用性测试" class="headerlink" title="9. 可用性测试"></a>9. 可用性测试</h3><p>这里的可用性测试是启发最大的。在从业几年内接触到的业务，大多/基本都是以企业角度，去告诉用户这是什么，去培养用户是什么。</p>
+<p>一类：你不会用？抱歉，要么你是xx，要么你可能不是我们的用户。</p>
+<p>另一类：试图用部分定量的数据来反推使用方。</p>
+<p>而可用性测试其实是站在用户角度：</p>
+<ol>
+<li>让用户判断这是什么</li>
+<li>让用户做出典型的任务</li>
+</ol>
+<p>焦点小组则重点不再可用性：<br>作用是找出用户想要什么，喜欢什么</p>
+<p>解决方式：</p>
+<ul>
+<li>抵制添加的冲动</li>
+<li>不清楚应该去掉含混不清的内容，而不是增加更多内容</li>
+<li>不要太看重对新功能的要求</li>
+<li>常常发现，用户其实已经有了更好的网站，这里只是讲述自己的喜好而已</li>
+<li>寻找不费力的主要目标<ul>
+<li>恍然大悟型</li>
+<li>便宜型</li>
+</ul>
+</li>
+</ul>
+<h3 id="10-你的网站为何值得尊敬"><a href="#10-你的网站为何值得尊敬" class="headerlink" title="10. 你的网站为何值得尊敬"></a>10. 你的网站为何值得尊敬</h3><p>好感，期待值。又想起了社会学中的互动。即是行为与期望值。</p>
+<blockquote>
+<p>好感存储器： 用户对网站的期望值</p>
+</blockquote>
+<p>降低好感的几种方式</p>
+<ul>
+<li>隐藏用户需要的信息</li>
+<li>没有按照系统的形式方式就不允许</li>
+<li>需要不必要的信息</li>
+<li>设置障碍</li>
+</ul>
+<p>整体来说，简单的小册子，讲述了web这个场景下，从交互这个角度的一些和书名相关的内容。收获有，但不体系。</p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/02/linux/常用命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tony You">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/10/02/linux/常用命令/" class="post-title-link" itemprop="url">linux 常用命令</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-10-02 12:04:15" itemprop="dateCreated datePublished" datetime="2019-10-02T12:04:15+08:00">2019-10-02</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-10-26 14:39:26" itemprop="dateModified" datetime="2019-10-26T14:39:26+08:00">2019-10-26</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/10/02/linux/常用命令/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/10/02/linux/常用命令/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><h3 id="查看所有网络端口"><a href="#查看所有网络端口" class="headerlink" title="查看所有网络端口"></a>查看所有网络端口</h3><p><code>netstat -an</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">[root@xxxxx~]<span class="comment"># netstat -an</span></span><br><span class="line">Active Internet connections (servers and established)</span><br><span class="line">Proto Recv-Q Send-Q Local Address               Foreign Address             State      </span><br><span class="line">tcp        0      0 127.0.0.1:6379              0.0.0.0:*                   LISTEN      </span><br><span class="line">tcp        0      0 127.0.0.1:11211             0.0.0.0:*                   LISTEN      </span><br><span class="line">tcp        0      0 0.0.0.0:8080                0.0.0.0:*                   LISTEN      </span><br><span class="line">tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      </span><br><span class="line">tcp        0      0 0.0.0.0:21                  0.0.0.0:*                   LISTEN      </span><br><span class="line">tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      </span><br><span class="line">tcp        0      0 127.0.0.1:8006              0.0.0.0:*                   LISTEN      </span><br><span class="line">tcp        0      0 0.0.0.0:3690                0.0.0.0:*                   LISTEN      </span><br><span class="line">tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看端口具体被那个进程占用"><a href="#查看端口具体被那个进程占用" class="headerlink" title="查看端口具体被那个进程占用"></a>查看端口具体被那个进程占用</h3><p><code>lsof -i :3690</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@xxxxxx~]<span class="comment"># lsof -i :3690</span></span><br><span class="line">COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME</span><br><span class="line">svnserve 8533 root    3u  IPv4  42704      0t0  TCP *:svn (LISTEN)</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看详细信息"><a href="#查看详细信息" class="headerlink" title="查看详细信息"></a>查看详细信息</h3><p><code>ps -aux | grep 8533</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@iZbp1g3u73g9nybvafuwc6Z ~]<span class="comment"># ps -aux | grep 8533</span></span><br><span class="line">Warning: bad syntax, perhaps a bogus <span class="string">'-'</span>? See /usr/share/doc/procps-3.2.8/FAQ</span><br><span class="line">root      8533  0.0  0.0 156996   888 ?        Ss   10:20   0:00 svnserve -d -r /shiyu/</span><br><span class="line">root      8648  0.0  0.0 103256   840 pts/0    S+   10:31   0:00 grep 8533</span><br></pre></td></tr></table></figure>
+
+<h3 id="杀死进程"><a href="#杀死进程" class="headerlink" title="杀死进程"></a>杀死进程</h3><p><code>kill -9 pid</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> -9 8533</span><br></pre></td></tr></table></figure>
+
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+  </div>
+
+  
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Tony You</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+        </a>
+      </div>
+    
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/YouHan26" title="GitHub &rarr; https://github.com/YouHan26" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:youhan26@gmail.com" title="E-Mail &rarr; mailto:youhan26@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tony You</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
+<script src="/js/schemes/pisces.js?v=7.4.1"></script>
+<script src="/js/next-boot.js?v=7.4.1"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.1"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+      
+    
+  
+    <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+    <script>
+      
+        window.addEventListener('load', () => {
+      
+        quicklink({
+          timeout: 3000,
+          priority: true,
+          ignores: [uri => uri.includes('#'),uri => uri == 'http://yoursite.com/',]
+        });
+      
+        });
+      
+    </script>
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://youhan26.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>
