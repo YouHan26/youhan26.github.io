@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.1">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.1">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.1">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.1',
+    exturl: false,
+    sidebar: {"position":"left","display":"always","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: true,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="《About Face 4》 叨唠两句看了眼上篇内容写作时间，恍恍忽已过一月有余。抛去“加班多”等借口，剩下的无非是大写的“懒”字一个。所幸马马虎虎算是“细读”了本书，得了空便记一记：或内容整理；或借题发挥；或感触罢了…  关于《About Face 4》（《交互设计精髓4》）豆瓣链接：https://book.douban.com/subject/26642302/ 这本书内容大致可以分为三个主">
+<meta name="keywords" content="交互,读书笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="about face4">
+<meta property="og:url" content="http://yoursite.com/2019/12/01/book/about-face/index.html">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="《About Face 4》 叨唠两句看了眼上篇内容写作时间，恍恍忽已过一月有余。抛去“加班多”等借口，剩下的无非是大写的“懒”字一个。所幸马马虎虎算是“细读”了本书，得了空便记一记：或内容整理；或借题发挥；或感触罢了…  关于《About Face 4》（《交互设计精髓4》）豆瓣链接：https://book.douban.com/subject/26642302/ 这本书内容大致可以分为三个主">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/629794/1575192263404-e65c709f-617e-452a-b83e-26abe160d0dd.png">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/629794/1575220226001-73131ab2-36b2-4035-bf6a-0e3d9e3115a8.png">
+<meta property="og:updated_time" content="2020-05-06T14:31:18.962Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="about face4">
+<meta name="twitter:description" content="《About Face 4》 叨唠两句看了眼上篇内容写作时间，恍恍忽已过一月有余。抛去“加班多”等借口，剩下的无非是大写的“懒”字一个。所幸马马虎虎算是“细读”了本书，得了空便记一记：或内容整理；或借题发挥；或感触罢了…  关于《About Face 4》（《交互设计精髓4》）豆瓣链接：https://book.douban.com/subject/26642302/ 这本书内容大致可以分为三个主">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/629794/1575192263404-e65c709f-617e-452a-b83e-26abe160d0dd.png">
+  <link rel="canonical" href="http://yoursite.com/2019/12/01/book/about-face/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>about face4 | Blog</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a3e57a8b524a833a7c624e3b4fdab76b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">this is a blog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+      
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags<span class="badge">3</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+      
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories<span class="badge">2</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">4</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-schedule">
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <a href="/schedule/" rel="section"><i class="fa fa-fw fa-calendar"></i>Schedule</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-sitemap">
+      
+    
+      
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>Sitemap</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="fa fa-search fa-fw"></i>Search</a>
+      </li>
+    
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/01/book/about-face/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tony You">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">about face4
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-12-01 16:41:25" itemprop="dateCreated datePublished" datetime="2019-12-01T16:41:25+08:00">2019-12-01</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-05-06 22:31:18" itemprop="dateModified" datetime="2020-05-06T22:31:18+08:00">2020-05-06</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/book/" itemprop="url" rel="index"><span itemprop="name">book</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="Views">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-users"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span class="firestore-visitors-count"></span>
+            </span>
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/2019/12/01/book/about-face/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/12/01/book/about-face/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="《About-Face-4》"><a href="#《About-Face-4》" class="headerlink" title="《About Face 4》"></a>《About Face 4》</h1><p><a name="93dd05e9"></a></p>
+<h3 id="叨唠两句"><a href="#叨唠两句" class="headerlink" title="叨唠两句"></a>叨唠两句</h3><p>看了眼上篇内容写作时间，恍恍忽已过一月有余。抛去“加班多”等借口，剩下的无非是大写的“懒”字一个。<br>所幸马马虎虎算是“细读”了本书，得了空便记一记：或内容整理；或借题发挥；或感触罢了…</p>
+<p><a name="951b5de8"></a></p>
+<h3 id="关于《About-Face-4》（《交互设计精髓4》）"><a href="#关于《About-Face-4》（《交互设计精髓4》）" class="headerlink" title="关于《About Face 4》（《交互设计精髓4》）"></a>关于《About Face 4》（《交互设计精髓4》）</h3><p>豆瓣链接：<a href="https://book.douban.com/subject/26642302/" target="_blank" rel="noopener">https://book.douban.com/subject/26642302/</a></p>
+<p>这本书内容大致可以分为三个主题：</p>
+<ul>
+<li>设计原则</li>
+<li>设计模式</li>
+<li>设计过程</li>
+</ul>
+<p>从整体上，这本书更类似于软件工程的敏捷实践。结合三个主题可以得出以下图：<br> <img src="https://cdn.nlark.com/yuque/0/2019/png/629794/1575192263404-e65c709f-617e-452a-b83e-26abe160d0dd.png" alt="image.png"><br>从相似性来看，交互设计的工程自动化潜力也是一个值得思考的方向。</p>
+<p><a name="zdea6"></a></p>
+<h3 id="交互设计"><a href="#交互设计" class="headerlink" title="交互设计"></a>交互设计</h3><p>复杂行为产品催生出交互设计学科。交互设计借鉴传统设计、可用性以及工程学科的理论和技术。但同时又有自己的方法和实践。</p>
+<p><a name="rAzJv"></a></p>
+<h4 id="交互设计和用户界面设计"><a href="#交互设计和用户界面设计" class="headerlink" title="交互设计和用户界面设计"></a>交互设计和用户界面设计</h4><p>交互设计是一门设计学科。在一些场合，交互设计被认为等同于“用户界面设计”。用户界面设计应属于软件设计学科，以软件工程为焦点。而交互设计的焦点则是：如何设计行为。</p>
+<p><a name="xB0NU"></a></p>
+<h4 id="交互设计和用户体验设计"><a href="#交互设计和用户体验设计" class="headerlink" title="交互设计和用户体验设计"></a>交互设计和用户体验设计</h4><p>用户体验（UX）设计有三个重叠的关注点：形态、行为和内容。交互设计的重点是行为设计，但也会关注行为与形态和内容之间的关联。</p>
+<p><a name="lf0sy"></a></p>
+<h3 id="目标导向设计"><a href="#目标导向设计" class="headerlink" title="目标导向设计"></a>目标导向设计</h3><p><a name="hDGu1"></a></p>
+<h4 id="实现模型和心理模型"><a href="#实现模型和心理模型" class="headerlink" title="实现模型和心理模型"></a>实现模型和心理模型</h4><p>实现模型是针对于软件/产品实现机制来讲。<br>心理模型(mental model)或者概念模型(conceptual model)是针对于用户使用产品的“感受”。<br>实现模型和心理模型的差异会非常大。用户了解具体的实现细节可能并不会对使用产品有太大帮助。<br>拿前端上滑渐变动画来讲，用户理解的是完整页面的自变化，而背后的实现却是多个可单一变化的片段组合而成。<br>很显然，用户界面的设计应基于用户心理模型，而非实现模型。</p>
+<p><a name="g36Jk"></a></p>
+<h4 id="设计过程"><a href="#设计过程" class="headerlink" title="设计过程"></a>设计过程</h4><ul>
+<li>研究<br>寻找行为模式</li>
+<li>建模<br>人物模型：用户模型、客户模型</li>
+<li>需求定义<br>情景场景剧本</li>
+<li>设计框架<ul>
+<li>元素</li>
+<li>用户体验整体框架：导航序列、原则、流程、对象关系等<br>基于模式的自上而下设计＋基于原则的自下而上设计</li>
+<li>关键路径和验证场景</li>
+</ul>
+</li>
+<li>设计细节</li>
+</ul>
+<p>整体过程主要强调：</p>
+<ul>
+<li>目标<br>设计是为了目标<br>用户目标按照《情景化设计》可以划分为体验目标、最终目标、人生目标<br>根据是否客户又可以分为客户目标、用户目标</li>
+<li>场景<br>基于场景的设计</li>
+</ul>
+<p><a name="kAfHu"></a></p>
+<h4 id="定性分析和定量分析"><a href="#定性分析和定量分析" class="headerlink" title="定性分析和定量分析"></a>定性分析和定量分析</h4><p>人类行为的复杂性无法依赖定量数据来理解，但是定性研究可以真实反映人类现实情况的复杂性。<br>定量分析有焦点小组、市场调研、消费心态学和行为变量等<br>定量分析可以帮助发现问题，进而指导定性分析设计，通过得到的行为模型再次反促进定量分析</p>
+<p>在定性分析中，采取更多的是焦点小组、访谈等形式，也是建立人物模型假设的过程。<br>访谈方向可参考：</p>
+<ul>
+<li>目标导向：那些事是最重要的？</li>
+<li>系统导向：使用产品最多做的事情是什么？</li>
+<li>工程流程导向：早起第一件事是什么？之后？</li>
+<li>态度导向：不愿意做什么？</li>
+</ul>
+<p>其次可使用的形式有可用性测试。<br>可用性测试的重点是衡量用户完成具体的、标准的任务的好坏程度，以及在此过程中遇到的问题。</p>
+<p><a name="W2yS5"></a></p>
+<h4 id="人物模型"><a href="#人物模型" class="headerlink" title="人物模型"></a>人物模型</h4><p>人物模型的作用更多的是统一设计流程中的对象，焦点和出发点。可类比为BPMN之于BPM，UML之于后端。<br>人物模型是针对具体情境的行为模式及具体动机或目标之上的合成模型。同时也有着可以转化各种角色用户的原型能力。<br>好处也是显而易见，以下问题经常遇到:</p>
+<ul>
+<li>弹性用户</li>
+<li>自我参考设计<br>大家都是从自我的“用户”出发</li>
+<li>边缘功能设计<br>边缘情况的过度考虑</li>
+</ul>
+<p><a name="rxgSS"></a></p>
+<h3 id="设计行为和形式"><a href="#设计行为和形式" class="headerlink" title="设计行为和形式"></a>设计行为和形式</h3><p><a name="g0wRW"></a></p>
+<h4 id="设计原则与设计模式"><a href="#设计原则与设计模式" class="headerlink" title="设计原则与设计模式"></a>设计原则与设计模式</h4><p>设计原则(design principles)为设计有用而令人期待的产品、系统和服务提供向导。<br>设计模式(design patterns)则针对某些具体的设计问题给出一般方案。譬如针对结构模式，ios经典的用户界面结构等等。<br>交互设计原则大致可以分为：</p>
+<ul>
+<li>概念原则</li>
+<li>行为原则</li>
+<li>界面原则</li>
+</ul>
+<p><a name="Chdx4"></a></p>
+<h4 id="媒介等同"><a href="#媒介等同" class="headerlink" title="媒介等同"></a>媒介等同</h4><p>之前从社会学的角度类比推导人和系统的交互是否可以构建成人和人的交互形式。而《媒介等同》这本书则直接从交互的角度发现了一些有趣的现象：人对待计算机以及其他交互产品之间的态度和反应方式如同人和人的交往。<br>人和人交往有被动与主动、脾气与性格、消极与积极、奖励和惩罚……<br>举个例子，人们对软件恣意收集个人信息并提供给其他产品时的厌恶感不正是被朋友大嘴巴子说给别人听的感受吗？<br>书中关于人对具有复杂交互性的产品/计算机等时的反应设定为出于本能的无意识行为。基于这点，一方面我们在设计交互时参考“拟人化”的方向来强化此类本能反应，这个也是交互发展过程中“拟物化”遇到的瓶颈问题。另外一方面我们也可用适用人的行为标准来定义计算机，定义产品，反过来验证产品的交互性能力。<br>关于第二点，后续会专门出一篇文章来详细推导和应用。</p>
+<p><a name="7cahi"></a></p>
+<h4 id="中级用户"><a href="#中级用户" class="headerlink" title="中级用户"></a>中级用户</h4><p>书中关于中级用户的表达和描述个人还是非常赞同的。软件所能承载和留存的用户，按照熟悉程度/使用频率等大致可以划分为：新手用户、中级用户、专家用户。而三者的分配占比大部分也是符合正态分布曲线。那么对于一个正常的产品，留住中级用户，保持中级用户的粘性才是生存下去的必要条件。<br>基于这点，快速引导新手用户转变成中级用户则显得比较重要。交互上则需要兼顾新手用户的上手门槛，中级用户的方便使用和能力满足，不拒绝专家用户的诉求。</p>
+<p><a name="O5kQt"></a></p>
+<h4 id="“负担”"><a href="#“负担”" class="headerlink" title="“负担”"></a>“负担”</h4><p>这一部分恰好可以降低上面的新手用户门槛。<br>用户在使用产品时，会执行以下几类工作：</p>
+<ul>
+<li>认知工作——理解产品的行为、文本以及组织结构等</li>
+<li>记忆工作——记忆命令、密码，位置等</li>
+<li>视觉工作——从界面查找位置等</li>
+<li>肢体工作——点击鼠标等</li>
+</ul>
+<p>书中提供一个点：将负担任务转变成目标导向任务。本质上其实是要求系统/产品变得聪明一些。<br>而负担又大致有以下：</p>
+<ul>
+<li>导航负担</li>
+<li>拟物化负担<br>需要恰当地映射功能</li>
+<li>模态负担</li>
+</ul>
+<p><a name="EBuU9"></a></p>
+<h4 id="交互设计的后隐喻时代"><a href="#交互设计的后隐喻时代" class="headerlink" title="交互设计的后隐喻时代"></a>交互设计的后隐喻时代</h4><p>界面范式有三类：</p>
+<ul>
+<li>实现中心范式</li>
+<li>隐喻范式</li>
+<li>习惯用法范式</li>
+</ul>
+<p>实现中心就不用多说了，完全就是基于实现模型而非用户心理模型的交互设计，早已成为过去时。<br>隐喻则需要人类的两种能力：本能和推理。譬如windows系统的文件夹，对于用户来讲是易于理解的，毕竟有现实生活的经验可以参考推理。但针对多重深度文件的查找情景是否适合，恐怕另当别论了。</p>
+<p><a name="6vYZx"></a></p>
+<h4 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h4><p>这个点是挺有意思的一个主题。撤销肯定是有必要的一个功能，那么如何设计一个系统的撤销能力？<br>撤销的主体是用户的执行操作，用户的执行操作有可分为数据部分和过程部分。书中将包含数据的操作定义为渐增操作，过程部分定义为过程操作。<br>那么在设计撤销功能的时候就要考虑：</p>
+<ul>
+<li>是否要区分过程操作和渐增操作？</li>
+<li>是否要支持单步操作？</li>
+<li>是否要支持分组撤销？</li>
+<li>撤销结果是否要解释/通知用户？</li>
+</ul>
+<p><a name="5GcQE"></a></p>
+<h4 id="视觉设计"><a href="#视觉设计" class="headerlink" title="视觉设计"></a>视觉设计</h4><p>视觉设计关注的是如何处理和安排可视元素，传达行为和信息。聚焦在清晰沟通。<br>视觉可操控的元素无非：大小、颜色、形状、方向、位置、纹理<br>从视觉界面角度：</p>
+<ul>
+<li>厘清视觉层次（视觉结构和流）——引入网格系统（模块化）等</li>
+<li>保持简单——界面在视觉上是高效的</li>
+</ul>
+<p>从视觉信息角度：</p>
+<ul>
+<li>区域信息整合——内容的质量、相关性和完整性</li>
+</ul>
+<p><a name="r1xAA"></a></p>
+<h3 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h3><p>设计模式这一部分，书中针对桌面，移动设备，网页，控件几个主题较为详细的讲解。<br>对于前端来讲，则是针对页面元素的交互角度分类。整理之后大致如下：<br><img src="https://cdn.nlark.com/yuque/0/2019/png/629794/1575220226001-73131ab2-36b2-4035-bf6a-0e3d9e3115a8.png" alt="image.png"></p>
+
+    </div>
+
+    
+    
+    
+      
+
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
+  <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Tony You wechat" style="width: 200px; max-width: 100%;">
+  <div></div>
+</div>
+
+      
+        
+      
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.jpg" alt="Tony You WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+
+  </div>
+</div>
+
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/交互/" rel="tag"># 交互</a>
+            
+              <a href="/tags/读书笔记/" rel="tag"># 读书笔记</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/10/26/book/don't-make-me-think/" rel="next" title="don't make me think(不要让我思考)">
+                  <i class="fa fa-chevron-left"></i> don't make me think(不要让我思考)
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2020/05/06/book/css-rough/" rel="prev" title="在项目中使用手绘风格">
+                  在项目中使用手绘风格 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+    
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#《About-Face-4》"><span class="nav-number">1.</span> <span class="nav-text">《About Face 4》</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#叨唠两句"><span class="nav-number">1.0.1.</span> <span class="nav-text">叨唠两句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于《About-Face-4》（《交互设计精髓4》）"><span class="nav-number">1.0.2.</span> <span class="nav-text">关于《About Face 4》（《交互设计精髓4》）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#交互设计"><span class="nav-number">1.0.3.</span> <span class="nav-text">交互设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#交互设计和用户界面设计"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">交互设计和用户界面设计</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#交互设计和用户体验设计"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">交互设计和用户体验设计</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目标导向设计"><span class="nav-number">1.0.4.</span> <span class="nav-text">目标导向设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实现模型和心理模型"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">实现模型和心理模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设计过程"><span class="nav-number">1.0.4.2.</span> <span class="nav-text">设计过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定性分析和定量分析"><span class="nav-number">1.0.4.3.</span> <span class="nav-text">定性分析和定量分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#人物模型"><span class="nav-number">1.0.4.4.</span> <span class="nav-text">人物模型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计行为和形式"><span class="nav-number">1.0.5.</span> <span class="nav-text">设计行为和形式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#设计原则与设计模式"><span class="nav-number">1.0.5.1.</span> <span class="nav-text">设计原则与设计模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#媒介等同"><span class="nav-number">1.0.5.2.</span> <span class="nav-text">媒介等同</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中级用户"><span class="nav-number">1.0.5.3.</span> <span class="nav-text">中级用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#“负担”"><span class="nav-number">1.0.5.4.</span> <span class="nav-text">“负担”</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#交互设计的后隐喻时代"><span class="nav-number">1.0.5.5.</span> <span class="nav-text">交互设计的后隐喻时代</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#撤销"><span class="nav-number">1.0.5.6.</span> <span class="nav-text">撤销</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#视觉设计"><span class="nav-number">1.0.5.7.</span> <span class="nav-text">视觉设计</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计模式"><span class="nav-number">1.0.6.</span> <span class="nav-text">设计模式</span></a></li></ol></li></ol></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Tony You</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span>
+        </a>
+      </div>
+    
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/YouHan26" title="GitHub &rarr; https://github.com/YouHan26" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:youhan26@gmail.com" title="E-Mail &rarr; mailto:youhan26@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tony You</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+  
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+  
+</div>
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+  <script>
+    firebase.initializeApp({
+      apiKey: 'AIzaSyBN0y8P_OCG8llRzuXfg6W3GnAHJXnfmxg',
+      projectId: 'blog-67b26'
+    });
+
+    function getCount(doc, increaseCount) {
+      // IncreaseCount will be false when not in article page
+
+      return doc.get().then(d => {
+        var count = 0;
+        if (!d.exists) { // Has no data, initialize count
+          if (increaseCount) {
+            doc.set({
+              count: 1
+            });
+            count = 1;
+          }
+        } else { // Has data
+          count = d.data().count;
+          if (increaseCount) {
+            // If first view this article
+            doc.set({ // Increase count
+              count: count + 1
+            });
+            count++;
+          }
+        }
+
+        return count;
+      });
+    }
+
+    function appendCountTo(el) {
+      return count => {
+        el.innerText = count;
+      }
+    }
+  </script>
+  <script>
+    (function() {
+      var db = firebase.firestore();
+      var articles = db.collection('articles');
+
+      if (CONFIG.page.isPost) { // Is article page
+        var title = document.querySelector('.post-title').innerText.trim();
+        var doc = articles.doc(title);
+        var increaseCount = true;
+        if (localStorage.getItem(title)) {
+          increaseCount = false;
+        } else {
+          // Mark as visited
+          localStorage.setItem(title, true);
+        }
+        getCount(doc, increaseCount).then(appendCountTo(document.querySelector('.firestore-visitors-count')));
+      } else if (CONFIG.page.isHome) { // Is index page
+        var promises = [...document.querySelectorAll('.post-title')].map(element => {
+          var title = element.innerText.trim();
+          var doc = articles.doc(title);
+          return getCount(doc);
+        });
+        Promise.all(promises).then(counts => {
+          var metas = document.querySelectorAll('.firestore-visitors-count');
+          counts.forEach((val, idx) => {
+            appendCountTo(metas[idx])(val);
+          });
+        });
+      }
+    })();
+  </script>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+<script src="/js/utils.js?v=7.4.1"></script><script src="/js/motion.js?v=7.4.1"></script>
+<script src="/js/schemes/pisces.js?v=7.4.1"></script>
+<script src="/js/next-boot.js?v=7.4.1"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.1"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://youhan26.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function disqus_config() {
+    this.page.url = "http://yoursite.com/2019/12/01/book/about-face/";
+    this.page.identifier = "2019/12/01/book/about-face/";
+    this.page.title = 'about face4';};
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://youhan26.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    window.addEventListener('load', loadComments, false);
+  
+</script>
+
+</body>
+</html>

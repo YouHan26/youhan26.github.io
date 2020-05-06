@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/05/06/book/css-rough/</loc>
+    
+    <lastmod>2020-05-06T14:32:49.256Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/01/book/about-face/</loc>
+    
+    <lastmod>2020-05-06T14:31:18.962Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/10/26/book/don't-make-me-think/</loc>
     
-    <lastmod>2019-10-26T07:13:00.882Z</lastmod>
+    <lastmod>2019-10-26T07:14:53.603Z</lastmod>
     
   </url>
   
@@ -16,14 +30,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2019-10-08T06:35:38.526Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2019-10-08T06:35:38.526Z</lastmod>
     
